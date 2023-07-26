@@ -156,6 +156,7 @@ nav{
 }
 .article-chart-list{
     max-width: 420px;
+    overflow-x: scroll;
 }
 table {
     border-collapse: collapse;
