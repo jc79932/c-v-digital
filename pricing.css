@@ -14,11 +14,10 @@ nav{
     animation-delay: 0.5s;
     
 }
-header{
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    background-color:rgba(0, 0, 0, 0.1);
-    
+.mobile{
+    display: none;
 }
+
 .download-portraits{
     height: 30px;
     width: 30px;
@@ -47,7 +46,7 @@ header{
 }
 .pricing-main{
     min-height: 100vh;
-    margin-top: 78px;
+    margin-top: 128px;
 }
 
 .pricing-main h1{
@@ -90,14 +89,31 @@ header{
     /* background-color: aqua; */
     display: flex;
     gap: 5px 30px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .article-item{
     flex-grow: 1;
-    height: 125px;
+    height: 216px;
     background-color:rgba(0, 0, 0, 0.1);
     position: relative;
+    max-width: 400px;
+
+}
+.article-item-description{
+    max-width: 100%;
+    margin: 10px 0px 0px 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-height: 96px;
+    border-left: 4px rgba(255, 255, 255, 0.25) solid;
+    /* border-right: 5px rgba(255, 255, 255, 0.25) solid;; */
+    vertical-align: center;
+}
+.light-bg{
+
+    margin: 0px 0px 0px 30px;
+    background-color:rgba(255, 255, 255, 0.25);
 }
 .article-item-list{
     flex-grow: 1;
@@ -105,21 +121,21 @@ header{
     position: relative;
 }
 .package-A-image{
-    background-image: url(Assets/Package-A-images.png);
+    background-image: url(/Assets/Package-A-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
 }
 .package-B-image{
-    background-image: url(Assets/Package-B-Images.png);
+    background-image: url(/Assets/Package-B-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
 }
 .package-C-image{
-    background-image: url(Assets/Package-C-Images.png);
+    background-image: url(/Assets/Package-C-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
@@ -135,7 +151,7 @@ header{
     flex-wrap: wrap;
     gap: 30px;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
 .article-chart-list{
@@ -201,7 +217,7 @@ table {
     font-size: 44px;
 }
 .article-item > p{
-    line-height: 1.5;
+    line-height: 1.3;
 }
 .article-item h3{
     text-decoration: line-through;
@@ -210,7 +226,7 @@ table {
     position: absolute;
     height: 100%;
     width: 30px;
-    background-color:rgba(0, 0, 0, 0.1);
+    /* background-color:rgba(0, 0, 0, 0.1); */
     left: 0;
     top: 0;
     z-index: 1;
@@ -225,4 +241,36 @@ table {
     left: 50%;
     transform: translate(-50%, -50%) rotate(180deg);
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+    .article-item-list{
+        height: 450px;
+    }
+    .mobile-display{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .article-item{
+        height: 240px;
+    }
+    
+}
+
+@media screen and (max-width:1060px) and (min-width:481px){
+    
+    header{
+        background-color: rgba(0, 0, 0, 0.1);
+     }
+     .pricing-main{
+        margin-top: 144px;
+     }
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile{
+        display: block;
+    }
+    .computer{
+        display: none;
+    }
 }

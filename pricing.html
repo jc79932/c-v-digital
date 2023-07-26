@@ -16,13 +16,13 @@
     </head>
 <body>
   <header>
-    <nav>
-      
+    <nav class="primary-header">
+      <div class="back-button"><i class="material-icons">arrow_back</i></div>
       <ul class="navigation">
         <li><a href="index.html#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
 
       <div class="logo">
@@ -30,6 +30,12 @@
       </div>
 
     </nav>
+  </header>
+  <header class = "mobile-display">
+    <div class="logo">
+      <img src="Assets/Neamon-logo-2.png" alt="Logo" style="color:white;">
+    </div>
+    <div class="burger-menu"><i class="material-icons">menu</i></div>
   </header>
 
   <main>
@@ -86,10 +92,14 @@
           </div>
 
           <h2 class="article-title-alacarte"><i> Ala Carte </i></h2>
-          <div class ="article-paragraph"><p>Feel free to select any additional prints you would like! You may stack them, although please
-            be advised that the pricing on the left is the pricing that comes AFTER selecting any of the
-            packages above. Otherwise, if no packages are selected, the latter right pricing will be applied.
+          <div class ="article-paragraph"><p class="computer">Feel free to select any additional prints you would like! You may stack them, although please
+            be advised that the pricing on the left chart is the pricing that comes AFTER selecting any of the
+            packages above. Otherwise, if no packages are selected, the latter right chart pricing will be applied.
             If you are interested about other prints, such as glass, acrylic, wood, etc., please let us know!</p>
+            <div class ="article-paragraph"><p class="mobile">Feel free to select any additional prints you would like! You may stack them, although please
+              be advised that the pricing on the top chart is the pricing that comes AFTER selecting any of the
+              packages above. Otherwise, if no packages are selected, the latter bottom pricing will be applied.
+              If you are interested about other prints, such as glass, acrylic, wood, etc., please let us know!</p>
           </br>
             <div class="article-chart-container">
             <div class="article-chart-list">
@@ -103,14 +113,14 @@
                 <tr>
                   <td>2 x 3 inches</td>
                   <td>$1.00</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>4 x 6 inches</td>
                   <td>$3.50</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>8 x 12 inches</td>
@@ -121,24 +131,24 @@
                 <tr>
                   <td>12 x 18 inches</td>
                   <td>$9.20</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>16 x 24 inches</td>
-                  <td></td>
+                  <td>---</td>
                   <td>$89.99</td>
                   <td>$185.99</td>
                 </tr>
                 <tr>
                   <td>20 x 30 inches</td>
                   <td>$35.00</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>24 x 36 inches</td>
-                  <td></td>
+                  <td>---</td>
                   <td>$185.99</td>
                   <td>$229.99</td>
                 </tr>
@@ -156,14 +166,14 @@
                 <tr>
                   <td>2 x 3 inches</td>
                   <td>$2.48</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>4 x 6 inches</td>
                   <td>$7.96</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>8 x 12 inches</td>
@@ -174,24 +184,24 @@
                 <tr>
                   <td>12 x 18 inches</td>
                   <td>$24.60</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>16 x 24 inches</td>
-                  <td></td>
+                  <td>---</td>
                   <td>$139.99</td>
                   <td>$149.99</td>
                 </tr>
                 <tr>
                   <td>20 x 30 inches</td>
                   <td>$70.00</td>
-                  <td></td>
-                  <td></td>
+                  <td>---</td>
+                  <td>---</td>
                 </tr>
                 <tr>
                   <td>24 x 36 inches</td>
-                  <td></td>
+                  <td>---</td>
                   <td>$269.99</td>
                   <td>$299.99</td>
                 </tr>
@@ -214,26 +224,29 @@
           
           <div class="article-item">
             <div class="article-item-title"><h2>Solo</h2></div>
-            <h2>$24.99</h2>
-            <h3>$49.99</h3>
-            <p>Digital Photos Included!</p>
-             <p>20 images + $2.00 per additional</p>
+            <h2 class="light-bg">$24.99</h2>
+            <h3 class="light-bg">$49.99</h3>
+            <p class="light-bg">Digital Photos Included!</p>
+             <p class="light-bg">20 images + $2.00 per additional</p>
+             <p class="article-item-description"> Whether you're looking to update your professional headshot or simply want to celebrate yourself, our solo portraits showcase your unique personality.</p>
           </div>
 
           <div class="article-item">
             <div class="article-item-title"><h2>Doubles</h2></div>
-            <h2>$49.99</h2>
-            <h3>$99.99</h3>
-            <p>Digital Photos Included!</p>
-             <p>25 images + $2.50 per additional</p>
+            <h2 class="light-bg">$49.99</h2>
+            <h3 class="light-bg">$99.99</h3>
+            <p class="light-bg">Digital Photos Included!</p>
+             <p class="light-bg">25 images + $2.50 per additional</p>
+             <p class="article-item-description" style="padding-top: 10px;"> Whether you're commemorating an anniversary or simply capturing a memory, our double portraits will best fit your needs.</p>  
           </div>
 
           <div class="article-item">
             <div class="article-item-title"><h2>Groups</h2></div>
-            <h2>$74.99</h2>
-            <h3>$149.99</h3>
-            <p>Digital Photos Included!</p>
-             <p>25 images + $3.00 per additional</p>
+            <h2 class="light-bg">$74.99</h2>
+            <h3 class="light-bg">$149.99</h3>
+            <p class="light-bg">Digital Photos Included!</p>
+             <p class="light-bg">25 images + $3.00 per additional</p>
+             <p class="article-item-description" style="padding-top: 10px;"> Whether it regards a professional groupshot or capturing your family's memory, our group portraits are highly recommended.</p>
           </div>
 
           <!-- <div class="article-chart-container">
@@ -245,14 +258,14 @@
             </div>
           </div> -->
 
-          <div class="article-chart-container">
+          <!-- <div class="article-chart-container">
             <div class="article-portrait-description"><p><b>Solo Portraits:</b> Whether you're looking to update your professional headshot or simply want to celebrate yourself, our solo portraits showcase your unique personality.</p>
             </div>
             <div class="article-portrait-description"><p><b>Double Portraits:</b> Whether you're commemorating an anniversary or simply capturing a memory, our double portraits will best fit your needs.</p>  
             </div>
             <div class="article-portrait-description"><p><b>Group Portraits:</b> Whether it regards a professional groupshot or capturing your family's memory, our group portraits are highly recommended.</p>
             </div>
-          </div>
+          </div> -->
 
         </br>
 
