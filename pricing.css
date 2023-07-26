@@ -121,21 +121,21 @@ nav{
     position: relative;
 }
 .package-A-image{
-    background-image: url(/Assets/Package-A-images.png);
+    background-image: url(Assets/Package-A-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
 }
 .package-B-image{
-    background-image: url(/Assets/Package-B-images.png);
+    background-image: url(Assets/Package-B-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
 }
 .package-C-image{
-    background-image: url(/Assets/Package-C-images.png);
+    background-image: url(Assets/Package-C-images.png);
     background-size: 60%;
     height: 200px;
     background-position: center; /* Center the image */
