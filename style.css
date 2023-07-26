@@ -11,6 +11,7 @@
 body{
   min-width: 279px;
   min-height: 449px;
+  max-width: 100vw;
 }
 
 p:not(.hero p, .article-item p){
